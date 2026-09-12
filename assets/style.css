@@ -1,0 +1,253 @@
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.slider-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(0, 0, 0, 0.15);
+}
+
+.carousel-inner {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #ff6600;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.button-link {
+    font-size: 16px;
+}
+
+.cta-pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@media(max-width:768px) {
+    .button-link {
+        font-size: 14px;
+    }
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 0, 0.605);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(255, 102, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 0, 0);
+    }
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background-color: #e65c00;
+}
+
+.card {
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.description {
+    height: 170px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgb(0, 0, 0) 80%);
+    z-index: 1;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.description h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.description .card-description {
+    margin: 0;
+    line-height: 1.4;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.slid-box-cont {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-box {
+    display: flex;
+    width: auto;
+    height: 100%;
+    animation: scroll 1000s linear infinite;
+}
+
+.slid-card {
+    min-width: 300px;
+    margin: 0 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.slid-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.hashtag-container {
+    width: 100%;
+    height: 80px;
+    /* Сделаем чуть компактнее */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hashtag-track {
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    animation: marquee-scroll 40s linear infinite reverse;
+}
+
+.hashtag-item {
+    padding: 10px 20px;
+    margin: 0 15px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 50px;
+    white-space: nowrap;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.hashtag-item:hover {
+    background: #ff6600;
+    color: #fff;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.project-slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.project-slider-wrapper .proj-slider-img {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-slider-wrapper .proj-description-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 40px 30px 40px 30px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 70%);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: center;
+    color: #fff;
+    pointer-events: none;
+}
+
+.project-slider-wrapper .carousel-indicators {
+    z-index: 3;
+    pointer-events: auto;
+}
+
+.project-slider-wrapper .proj-title {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.project-slider-wrapper .proj-text {
+    font-size: 16px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+@media(max-width:768px) {
+    .project-slider-wrapper .proj-title {
+        font-size: 18px;
+    }
+
+    .project-slider-wrapper .proj-text {
+        font-size: 14px;
+    }
+}
+
+.contact-block {
+    width: 250px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.footer-icon {
+    transition: 0.5s;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-text {
+    text-align: justify;
+    font-style: 1px;
+    color: #fff;
+}
